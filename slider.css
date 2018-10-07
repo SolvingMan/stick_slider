@@ -1,0 +1,38 @@
+/* Remember to use vendor prefixes. I just kept it simple :) */
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	width: 8px;
+	height: 8px;
+	margin: 0 4px;
+	background: #e6e6e6;
+	transition: transform 0.25s ease 0.25s, width 0.25s ease 0.25s, margin 0.25s ease 0.25s, background 0s ease 0.25s; /* timings should be half of bxSlider speed*/
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+	background: #e6e6e6;	
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #000000;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.hidden {
+	transform: scale(0);
+	width: 0px;
+	margin: 0px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager .smallDot1 {
+	transform: scale(0.75);
+	margin: 0px 4px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager .smallDot2 {
+	transform: scale(0.5);
+	margin: 0 4px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager .smallDot3 {
+	transform: scale(0.25);
+	margin: 0 4px;
+}
